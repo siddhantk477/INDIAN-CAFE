@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  #about {
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  #about h1 {
+    color: #333;
+  }
+  
+  #services ul {
+    list-style: none;
+  }
+  
+  #services ul li {
+    margin: 10px 0;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #contact form label {
+    margin-top: 10px;
+  }
+  
+  #contact form input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #contact form button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }

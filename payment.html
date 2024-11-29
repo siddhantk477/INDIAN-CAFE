@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Payment - ₹</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurant Order & Payment</h1>
+    </header>
+
+    <main>
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item" data-id="1" data-name="Paneer Butter Masala" data-price="250">
+                <h3>Pizza</h3>
+                <p>₹250.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="2" data-name="Chicken Biryani" data-price="300">
+                <h3>Burger</h3>
+                <p>₹300.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="3" data-name="Garlic Naan" data-price="50">
+                <h3>chumin</h3>
+                <p>₹50.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₹<span id="total">0.00</span></p>
+            <button id="checkout-button">Proceed to Payment</button>
+        </section>
+
+        <!-- Payment Section -->
+        <section id="payment" class="hidden">
+            <h2>Payment Details</h2>
+            <form id="payment-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" maxlength="16" required>
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="month" id="expiry-date" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" maxlength="3" required>
+
+                <button type="submit" id="pay-now">Pay Now ₹<span id="pay-total">0.00</span></button>
+            </form>
+        </section>
+    </main>
+
+    <script src="payment.js"></script>
+</body>
+</html>

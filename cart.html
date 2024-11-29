@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Cart - ₹</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Indian Cafe</h1>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item" data-id="1" data-name="Paneer Butter Masala" data-price="250">
+                <h3>Pizza</h3>
+                <p>₹250.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="2" data-name="Chicken Biryani" data-price="300">
+                <h3>Burgur</h3>
+                <p>₹300.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="3" data-name="Garlic Naan" data-price="50">
+                <h3>Chowmin</h3>
+                <p>₹50.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₹<span id="total">0.00</span></p>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>
